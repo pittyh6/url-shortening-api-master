@@ -22,6 +22,7 @@
 ## What I learned/used
 * HTML
 * HTML5
+* HTML5 > landmarks
 * CSS
 * Flexbox
 * Grid 
