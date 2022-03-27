@@ -6,8 +6,8 @@
 * create a landing page without tutorial, only search on internet document and stack Overflow.
 
 ## Project
-* Live Manage landing page [link]()
-* Manage landing page [link]()
+* Live URL - Shortening  API [link]()
+* URL - Shortening  API [link](https://github.com/pittyh6/url-shortening-api-master)
 
 ## Management Tools
 * Jira(Sprints) [link]()
@@ -30,6 +30,7 @@
 * JQuery
 * Responsive
 * Order: mobile, tablet, desktop.
+* hamburguer navbar
 
 
 
