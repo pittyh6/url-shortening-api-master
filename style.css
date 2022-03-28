@@ -59,12 +59,6 @@ ul{
     border-radius: 10px;
 }
 
-
-@media all and (min-width: 768px){
-    .container{
-        padding: 50px 160px;
-    } 
-}
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
 /* ~~~~MENU NAVBAR~~~~ */
@@ -103,13 +97,16 @@ ul{
     border-top: 1px solid var(--gray);
 }
 .item>.green-round-btn{
-    /* display: inline !important; */
     text-align: center;
     width: 90%;
     margin: auto;
 }
 /*desktop*/
 @media all and (min-width: 820px){
+    .container{
+        padding: 50px 160px;
+    } 
+    /* ~~~~MENU NAVBAR~~~~ */
     .menu{
         display: grid;
         grid-template-columns: repeat(9, 1fr);    
@@ -134,4 +131,10 @@ ul{
     .menu >.login{
         grid-column: 8/9;
     }
+    /* ~~~~INTRO~~~~ */
+    
 }
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/* ~~~~INTRO~~~~ */
+/*mobile*/
