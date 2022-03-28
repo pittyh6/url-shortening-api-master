@@ -30,6 +30,7 @@
 * jira
 * JQuery
 * Responsive
+* Mobile-first workflow
 * Order: mobile, tablet, desktop.
 * hamburguer navbar
 

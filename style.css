@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+/*Variables*/
+:root{
+    --cyan: hsl(180, 66%, 49%);
+    --dark-violet: hsl(257, 27%, 26%);
+    --red: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260, 8%, 14%);
+    --white: #fff;
+
+    --font-family-poppins: 'Poppins';
+    --font-weight-500: 500;
+    --font-weight-700: 700;
+}
+
+/*reset default properties and values*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    overflow: hidden;
+    font-family: var(--font-family-poppins);
+    font-weight: var(--font-weight-500);
+    font-size: 18px;
+}
+.container{
+    padding: 50px 25px;
+}
+.top-body{
+    background-color:var(--white);
+}
+.bottom-body{
+    background-color:var(--grayish-violet)
+}
+a{    
+    text-decoration: none;
+}
+a,p{
+    color: var(--gray);
+}
+ul{
+    list-style-type: none;
+}
+.green-round-btn,
+.green-square-btn{
+    background-color: var(--cyan);
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+.green-round-btn{    
+    border-radius: 50rem;
+}
+.green-square-btn{
+    border-radius: 10px;
+}
+
+
+@media all and (min-width: 768px){
+    .container{
+        padding: 50px 160px;
+    } 
+}
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/* ~~~~MENU NAVBAR~~~~ */
+/*mobile*/
+.menu{
+    display: flex;
+    flex-wrap:wrap;    
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li{
+    padding: 20px 0; 
+}
+.menu li a{
+    color: var(--white);
+    display: block;
+}
+.toggle{
+    order: 1;
+    cursor: pointer;
+}
+.toggle>img{   
+    width: 25px;
+}
+.item{
+    order: 2;
+    background-color: var(--dark-violet);
+    /* display: none; */
+    text-align: center;
+    width: 100%;
+}
+.item.active{
+    display: block;
+}
+.item.login{
+    border-top: 1px solid var(--gray);
+}
+.item>.green-round-btn{
+    /* display: inline !important; */
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+/*desktop*/
+@media all and (min-width: 820px){
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);    
+    }
+   .item{
+        background-color: var(--white);
+        display:block;
+        width: auto;  
+   }
+   .menu li a:not(.menu li .green-round-btn){
+    color: var(--gray);
+   }
+   .toggle{
+       display: none;
+   }
+   .item>.green-round-btn{
+        width: auto;
+    }
+    .item.login{
+        border-top: 0px;
+    }
+    .menu >.login{
+        grid-column: 8/9;
+    }
+}
