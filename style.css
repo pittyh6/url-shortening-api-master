@@ -92,11 +92,11 @@ ul{
 .item{
     order: 2;
     background-color: var(--dark-violet);
-    /* display: none; */
+    display: none;
     text-align: center;
     width: 100%;
 }
-.item.active{
+.active{
     display: block;
 }
 .item.login{
