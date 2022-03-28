@@ -22,7 +22,7 @@
     margin: 0;
 }
 html, body{
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: var(--font-family-poppins);
     font-weight: var(--font-weight-500);
     font-size: 18px;
@@ -39,6 +39,9 @@ html, body{
 a{    
     text-decoration: none;
 }
+p{
+    margin: 25px 0 45px 0;
+}
 a,p{
     color: var(--gray);
 }
@@ -48,6 +51,7 @@ ul{
 .green-round-btn,
 .green-square-btn{
     background-color: var(--cyan);
+    color: var(--white);
     height: 50px;
     text-align: center;
     padding: 10px;
@@ -101,6 +105,24 @@ ul{
     width: 90%;
     margin: auto;
 }
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/* ~~~~INTRO~~~~ */
+/*mobile*/
+.intro {
+    text-align: center;
+    height: 750px;
+}
+.header-top-right>img {
+    margin-bottom: 25px ;
+    width: 510px;
+}
+.header-top-right>a{
+    margin-bottom: 50px;
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
 /*desktop*/
 @media all and (min-width: 820px){
     .container{
@@ -117,7 +139,7 @@ ul{
         width: auto;  
    }
    .menu li a:not(.menu li .green-round-btn){
-    color: var(--gray);
+        color: var(--gray);
    }
    .toggle{
        display: none;
@@ -131,10 +153,24 @@ ul{
     .menu >.login{
         grid-column: 8/9;
     }
-    /* ~~~~INTRO~~~~ */
     
+    /* ~~~~INTRO~~~~ */
+    .intro{
+        display: grid;
+        height: 400px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 60px;        
+    }
+    .header-bottom-left{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: left;
+    }
+    .header-top-right{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .header-top-right>img{
+        position: absolute;
+    }
 }
-/*-------------------------------------------------------*/
-/*-------------------------------------------------------*/
-/* ~~~~INTRO~~~~ */
-/*mobile*/
