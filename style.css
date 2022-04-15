@@ -371,3 +371,31 @@ main{
         background-image: url(/images/bg-boost-desktop.svg);
     }
 }
+
+/*-------------------------------------------------------*/
+/*Tablet*/
+/*-------------------------------------------------------*/
+@media all and (min-width: 819px) and (max-width:1035px){
+    .types-statistics > div{
+        flex: 1 1 350px;
+    }
+    .horizontal-line{
+        display: none;
+    }
+    .vertical-line{
+        display: block;
+        top: 70rem;
+    }
+}
+@media all and (max-width: 819px){
+    .types-statistics > div{
+        flex: 1 1 450px;
+    }
+    .horizontal-line{
+        display: none;
+    }
+    .vertical-line{
+        display: block;
+        top: 90rem;
+    }
+}
