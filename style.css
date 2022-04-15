@@ -34,7 +34,7 @@ html, body{
     background-color:var(--white);
 }
 .bottom-body{
-    background-color:var(--grayish-violet);
+    background-color: #eef1f6;
 }
 a{    
     text-decoration: none;
@@ -74,10 +74,27 @@ ul{
     color: var(--red);
     font-size: 13px;
 }
+/*white boxes*/
+.result-url, .statistic-box{
+    background-color: var(--white);
+    border-radius: 5px;
+}
+/*Lines*/
+.horizontal-line, .vertical-line{
+    display: none;
+}
+.horizontal-line{
+    border-bottom: 5px solid var(--cyan);
+    width: 55%;
+}
+.vertical-line{
+    border-left: 5px solid var(--cyan);
+    height: 800px;
+}
 /*-------------------------------------------------------*/
+/*mobile*/
 /*-------------------------------------------------------*/
 /* ~~~~MENU NAVBAR~~~~ */
-/*mobile*/
 .menu{
     display: flex;
     flex-wrap:wrap;    
@@ -116,10 +133,9 @@ ul{
     width: 90%;
     margin: auto;
 }
-/*-------------------------------------------------------*/
+
 /*-------------------------------------------------------*/
 /* ~~~~INTRO~~~~ */
-/*mobile*/
 .intro {
     text-align: center;
     height: 750px;
@@ -131,11 +147,8 @@ ul{
 .header-top-right>a{
     margin-bottom: 50px;
 }
-
-/*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
 /* ~~~~MAIN~~~~ */
-/*mobile*/
 main{
     position: relative;
     bottom: 150px;
@@ -167,8 +180,6 @@ main{
 }
 /*MAIN RESULT*/
 .result-url{
-    background-color: var(--white);
-    border-radius: 3px;
     /* display: grid; */
     display: none;
     margin: 20px auto;  
@@ -186,15 +197,50 @@ main{
 .link-result{
     color: var(--cyan);
 }
-
-
-
-
-
-
 /*-------------------------------------------------------*/
+/* ~~~~ASIDE - STATISTICS~~~~ */
+.statistics{
+    padding: 10px;
+    text-align: center;    
+}
+.statistics > p{
+    color: var(--grayish-violet);
+}
+/* ~~~~STATISTICS - types ~~~~ */
+.types-statistics{
+    display:flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
+}
+.types-statistics > div{
+    flex: 1 1 290px;
+}
+.statistic-box{
+    margin: 50px auto;
+    padding: 20px;
+}
+.statistic-box > .img-bg{
+    background-color: var(--dark-violet);
+    border-radius: 100%;
+    padding: 15px;
+    width: 75px;
+    height: 70px;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+}
+.vertical-line{
+    display: block;
+    position: absolute;
+    top: 90rem;
+    left: 50%;
+    z-index: 1;
+}
+
 /*-------------------------------------------------------*/
 /*desktop*/
+/*-------------------------------------------------------*/
 @media all and (min-width: 820px){
     .container{
         padding: 50px 160px;
@@ -280,5 +326,33 @@ main{
         margin: auto 20px;
         width: 50%;
         justify-self: end;
+    }
+    /* ~~~~ASIDE - STATISTICS~~~~ */
+    .statistics{
+        margin: auto;
+        width:50%;
+    }
+    /* ~~~~STATISTICS - types ~~~~ */
+    .statistic-box{
+        margin: 30px;
+    }
+    .box-2{
+        /* position: relative;
+        top: 50px; */
+        margin-top: 75px;
+    }
+    .box-3{
+        /* position: relative;
+        top: 100px; */
+        margin-top: 125px;
+    }
+    .vertical-line{
+        display: none;
+    }
+    .horizontal-line{
+        display: block;
+        position: absolute;
+        top: 1240px;
+        left: 252px;
     }
 }
