@@ -169,7 +169,8 @@ main{
 .result-url{
     background-color: var(--white);
     border-radius: 3px;
-    display: grid;
+    /* display: grid; */
+    display: none;
     margin: 20px auto;  
 }
 .result-url> h4{
@@ -245,6 +246,9 @@ main{
     }
 
     /* ~~~~MAIN~~~~ */
+    main{
+        bottom: 120px;
+    }
     .convert-url> div{
        display: inline-block;
     }
@@ -260,8 +264,7 @@ main{
         margin: auto;
     }
     /*MAIN RESULT*/
-    .result-url{
-        display: grid;
+    .result-url{        
         grid-template-columns: repeat(4, auto);       
     }
     .link-original{
