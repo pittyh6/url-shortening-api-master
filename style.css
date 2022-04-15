@@ -237,6 +237,21 @@ main{
     left: 50%;
     z-index: 1;
 }
+/*-------------------------------------------------------*/
+/* ~~~~Section - Booster ~~~~ */
+.booster{
+ background-image: url(/images/bg-boost-mobile.svg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-color:var( --dark-violet);
+ height: 300px; 
+ text-align: center;
+}
+.booster > h1{
+    display: block;
+    padding: 90px 0 30px;
+    color: var(--white);
+}
 
 /*-------------------------------------------------------*/
 /*desktop*/
@@ -337,13 +352,9 @@ main{
         margin: 30px;
     }
     .box-2{
-        /* position: relative;
-        top: 50px; */
         margin-top: 75px;
     }
     .box-3{
-        /* position: relative;
-        top: 100px; */
         margin-top: 125px;
     }
     .vertical-line{
@@ -354,5 +365,9 @@ main{
         position: absolute;
         top: 1240px;
         left: 252px;
+    }
+    /* ~~~~SECTION - booster ~~~~ */
+    .booster{
+        background-image: url(/images/bg-boost-desktop.svg);
     }
 }
