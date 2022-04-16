@@ -2,6 +2,7 @@
 /*Variables*/
 :root{
     --cyan: hsl(180, 66%, 49%);
+    --cyan-hover: #98e4e4;
     --dark-violet: hsl(257, 27%, 26%);
     --red: hsl(0, 87%, 67%);
     --gray: hsl(0, 0%, 75%);
@@ -63,6 +64,11 @@ ul{
 }
 .green-square-btn{
     border-radius: 10px;
+}
+.green-round-btn:hover,
+.green-square-btn:hover{
+    color: var(--white);
+    background-color: var(--cyan-hover);
 }
 .square-input{
     height: 50px;
@@ -281,6 +287,12 @@ footer{
 .footer-social-media>img{
     margin: 0 10px;
 }
+.item-footer:hover{
+    color: var(--cyan-hover)!important;
+}
+.footer-social-media>img:hover{
+    filter: invert(77%) sepia(5%) saturate(6542%) hue-rotate(168deg) brightness(415%) contrast(56%);
+}
 /*-------------------------------------------------------*/
 /*desktop*/
 /*-------------------------------------------------------*/
@@ -298,6 +310,9 @@ footer{
         display:block;
         width: auto;  
    }
+   .item>a:not(.button>a):hover{
+        color: var(--dark-violet) !important;
+    }
    .menu li a:not(.menu li .green-round-btn){
         color: var(--gray);
    }
@@ -305,7 +320,7 @@ footer{
        display: none;
    }
    .item>.green-round-btn{
-        width: auto;
+        width: 150px;
     }
     .item.login{
         border-top: 0px;
